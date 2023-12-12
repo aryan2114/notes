@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav{
+    background-color: yellowgreen;
+    color: white;
+    width: 100%;
+    display: flex;
+    height: auto;
+    justify-content: start;
+
+}
+.nav .logo{
+    font-size: 35px;
+    padding-left: 15px;
+    font-weight: 600;
+}
+#addBtn{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    background-color: yellow;
+    color: white;
+    font-weight: 800;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 55px;
+    width: 55px;
+    font-size: xx-large;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+
+}
+.note{
+    width: 400px;
+    height: 300px;
+    margin: 15px;
+    background-color:aqua;
+    margin-top: 55px;
+    overflow-y:auto;
+    /*border-radius: 15px;*/
+    
+}
+.tool{
+    width: 100%;
+    background-color: rgb(243 218 0 / 74%);
+    color: white;
+    padding: 5px;
+    padding-right: 18px;
+    display: flex;
+    justify-content: end;
+    
+
+}
+
+.tool i{
+    padding: 5px;
+    cursor: pointer;
+    
+}
+.note textarea{
+    border: none;
+    width: 100%;
+    min-height: 100vh;
+    resize: none;
+    padding: 15px;
+    padding-right:6px;
+    font-size: medium;
+    font-weight: 800;
+    background-color: wheat;
+    color: rgba(0, 0, 0, 0.333);
+    /*overflow-y: scroll;*/
+    
+    
+}
+.note textarea:focus{
+    border: none;
+    outline: none;
+    
+}
+@media (max-width: 767px){
+    #main{
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        
+        padding-bottom: 50px;
+    
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .note{
+        width: 40%;
+        height: 150px;
+        margin: 15px;
+        background-color: aqua;
+        margin-top: 55px;
+        overflow-y: hidden;
+        border-radius: 15px;
+        
+    }
+    .note textarea{
+        border: none;
+        width: 100%;
+        min-height: 100vh;
+        resize: none;
+        padding: 15px;
+        overflow-y: scroll;
+        padding-right: 20px;
+        font-size: medium;
+        font-weight: 800;
+        background-color: wheat;
+        color: rgba(0, 0, 0, 0.333);
+        
+    }
+    
+       
+}
